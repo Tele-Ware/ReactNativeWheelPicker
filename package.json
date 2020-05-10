@@ -1,12 +1,42 @@
 {
-  "name": "react-native-wheel-picker-android",
-  "version": "3.0.0",
-  "description": "Simple Wheel Picker for Android to use with react-native",
-  "main": "index.tsx",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kalontech/ReactNativeWheelPicker.git"
+  "_from": "react-native-wheel-picker-android@^2.0.5",
+  "_id": "react-native-wheel-picker-android@2.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-ee8MLSvFoi0uoy0QEPYSlmpwLYSJ4tBmdXARyj+EAevGB+m4CFqOfD6Ptsl+JtGkoNbXZMIZsdmQASfH8g0/gw==",
+  "_location": "/react-native-wheel-picker-android",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "react-native-wheel-picker-android@^2.0.5",
+    "name": "react-native-wheel-picker-android",
+    "escapedName": "react-native-wheel-picker-android",
+    "rawSpec": "^2.0.5",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.5"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-wheel-picker-android/-/react-native-wheel-picker-android-2.0.5.tgz",
+  "_shasum": "ab1881640c7c4b64b878e519ea5fe82fbb9bde99",
+  "_spec": "react-native-wheel-picker-android@^2.0.5",
+  "_where": "D:\\TFS\\New\\Mob_7ader\\Mob_7ader - New",
+  "author": {
+    "name": "Artem Kosiakevych",
+    "email": "artem.kosiakevych@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ElekenAgency/ReactNativeWheelPicker/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "moment": "2.22.0"
+  },
+  "deprecated": false,
+  "description": "Simple Wheel Picker for Android to use with react-native",
+  "homepage": "https://github.com/ElekenAgency/ReactNativeWheelPicker",
   "keywords": [
     "react-component",
     "react-native",
@@ -16,13 +46,12 @@
     "date-picker",
     "date-wheel-picker"
   ],
-  "author": "Artem Kosiakevych <artem.kosiakevych@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kalontech/ReactNativeWheelPicker/issues"
+  "main": "index.js",
+  "name": "react-native-wheel-picker-android",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElekenAgency/ReactNativeWheelPicker.git"
   },
-  "homepage": "https://github.com/kalontech/ReactNativeWheelPicker",
-  "dependencies": {
-    "moment": "^2.24.0"
-  }
+  "version": "2.0.5"
 }
