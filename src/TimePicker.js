@@ -18,7 +18,7 @@ import { RFValue } from 'react-native-responsive-fontsize'
 import { Icon as IconMaterial, Tooltip } from 'react-native-elements';
 import { Colors } from '../../../src/Constants'
 import i18n, { t } from '../../../src/lang/services/i18n';
-import Text from '../../../src/components/Text'
+import { Text } from '../../../src/components'
 
 const AM = 'AM'
 const HOUR = 60
@@ -116,8 +116,8 @@ export default class TimePicker extends React.Component<Props, State> {
       styles.container, { backgroundColor: this.props.backgroundColor }, { flexDirection: I18nManager.isRTL ? 'row-reverse' : 'row' }]}>
 
 
-        <View style={{ flex: 1}}>
-          <Text style={{ alignSelf: 'center', fontSize: RFValue(20), color:'#000' }}>{t("common:hh")}</Text>
+        <View style={{ flex: 1 }}>
+          <Text style={{ alignSelf: 'center', fontSize: RFValue(20), color: '#000' }}>{t("common:hh")}</Text>
           <WheelPicker
             isCyclic
             style={styles.wheelPicker}
@@ -130,9 +130,9 @@ export default class TimePicker extends React.Component<Props, State> {
         </View>
 
         <View style={{ flex: 1 }}>
-          <Text style={{ alignSelf: 'center', fontSize: RFValue(20), color:'#000'  }}>{t("common:m")}</Text>
+          <Text style={{ alignSelf: 'center', fontSize: RFValue(20), color: '#000' }}>{t("common:m")}</Text>
           <WheelPicker
-          //itemTextColor='red' 
+            //itemTextColor='red' 
             style={styles.wheelPicker}
             isCyclic
             {...this.props}
