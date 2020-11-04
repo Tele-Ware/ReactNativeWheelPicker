@@ -18,7 +18,7 @@ import { RFValue } from 'react-native-responsive-fontsize'
 import { Icon as IconMaterial, Tooltip } from 'react-native-elements';
 import { Colors } from '../../../src/Constants'
 import i18n, { t } from '../../../src/lang/services/i18n';
-import { Text } from '../../../src/components'
+import Text from '../../../src/components/Text'
 
 const AM = 'AM'
 const HOUR = 60
