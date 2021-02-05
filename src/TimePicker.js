@@ -143,7 +143,7 @@ export default class TimePicker extends React.Component<Props, State> {
           />
         </View>
 
-        {!this.props.format24 && this.renderAm()}
+        {/* {!this.props.format24 && this.renderAm()} */}
       </View>
     )
   }
