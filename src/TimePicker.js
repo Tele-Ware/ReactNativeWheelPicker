@@ -63,7 +63,7 @@ export default class TimePicker extends React.Component<Props, State> {
     this.state = {
       selectedDate,
       hours,
-      minutes: minutes || getMinutesArray(),
+      minutes: minutes || this.getMinutesArray(),
       selectedHourIndex,
       selectedMinuteIndex,
       selectedAmIndex,
@@ -79,6 +79,18 @@ export default class TimePicker extends React.Component<Props, State> {
     selectedHourIndex: 0,
     selectedMinuteIndex: 0,
     selectedAmIndex: 0,
+  }
+
+  getMinutesArray = () => {
+    const arr = []
+    let num;
+    // arr.push('00')
+    // arr.push('01')
+    for (let i = 0; i < 60; i++) {
+      num = i < 10 ? `0${i}` : `${i}`
+      arr.push(num)
+    }
+    return arr
   }
 
   componentWillReceiveProps(next) {
@@ -97,12 +109,13 @@ export default class TimePicker extends React.Component<Props, State> {
     this.setState({
       selectedDate,
       hours,
-      minutes: minutes || getMinutesArray(),//getFiveMinutesArray(),
+      minutes: minutes || this.getMinutesArray(),//getFiveMinutesArray(),
       selectedHourIndex,
       selectedMinuteIndex,
       selectedAmIndex,
     })
   }
+
 
   render() {
     const { hours, selectedHourIndex, minutes, selectedMinuteIndex } = this.state
@@ -143,7 +156,7 @@ export default class TimePicker extends React.Component<Props, State> {
           />
         </View>
 
-        {/* {!this.props.format24 && this.renderAm()} */}
+        {this.props.format24 && this.renderAm()}
       </View>
     )
   }
